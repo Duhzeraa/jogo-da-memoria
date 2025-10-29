@@ -20,9 +20,12 @@ h1 {
 }
 
 .memory-game {
-    width: 640px;
-    height: 640px;
+    width: 40vh;
+    max-width: 600px;
+    height: auto;
     display: grid;
+    aspect-ratio: 1 / 1;
+    margin: 0 auto;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 15px;
     perspective: 1000px; /* Essencial para o efeito 3D da virada */
@@ -53,7 +56,7 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 5rem;
+    font-size: 4rem;
     border-radius: 10px;
     background: linear-gradient(45deg, #ffffff, #9ea2dd); /* Cor do verso da carta */
     
@@ -67,14 +70,14 @@ h1 {
 .front-face {
     background: linear-gradient(to top, #3fa1e2, #3f49d8); /* Cor da frente da carta */
     color: white;
-    font-size: 7rem;
+    font-size: 4rem;
 }
 
 /* ESTILOS PARA O NOVO BOTÃO */
 #reset-btn {
     margin: 20px;
     padding: 10px 20px;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #fff;
     background-color: #3f49d800; /* Uma cor complementar */
     border: none;
@@ -86,4 +89,17 @@ h1 {
 
 #reset-btn:hover {
     transform: scale(1.05);
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 15px 0;
+  background-color: #ffffff44; /* fundo preto */
+  color: #000000; /* texto branco */
+  text-align: center;
+  font-size: 14px;
+  position: fixed; /* se quiser que fique sempre no fim da tela */
+  bottom: 0;
+  left: 0;
 }
