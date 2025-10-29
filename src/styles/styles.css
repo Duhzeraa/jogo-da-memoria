@@ -10,13 +10,13 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: #f0f2f5;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: white ;
+    font-family: sans-serif
 }
 
 h1 {
     margin-bottom: 20px;
-    color: #333;
+    color: #000000;
 }
 
 .memory-game {
@@ -55,7 +55,8 @@ h1 {
     justify-content: center;
     font-size: 5rem;
     border-radius: 10px;
-    background: #ffffff;
+    background: linear-gradient(45deg, #ffffff, #9ea2dd); /* Cor do verso da carta */
+    
 }
 
 .back-face {
@@ -64,24 +65,18 @@ h1 {
 }
 
 .front-face {
-    background: #6c5ce7; /* Cor da frente da carta */
+    background: linear-gradient(to top, #3fa1e2, #3f49d8); /* Cor da frente da carta */
     color: white;
-    font-size: 6rem;
-}
-
-/* ... estilos existentes ... */
-
-h1 {
-    margin-bottom: 20px;
-    color: #333;
+    font-size: 7rem;
 }
 
 /* ESTILOS PARA O NOVO BOTÃO */
 #reset-btn {
+    margin: 20px;
     padding: 10px 20px;
     font-size: 1rem;
     color: #fff;
-    background-color: #a29bfe; /* Uma cor complementar */
+    background-color: #3f49d8; /* Uma cor complementar */
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -90,5 +85,5 @@ h1 {
 }
 
 #reset-btn:hover {
-    background-color: #6c5ce7; /* Mesma cor da frente da carta */
+    background-color: #2b1c63; /* Mesma cor da frente da carta */
 }
