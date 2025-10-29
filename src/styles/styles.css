@@ -74,16 +74,16 @@ h1 {
 #reset-btn {
     margin: 20px;
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 3rem;
     color: #fff;
-    background-color: #3f49d8; /* Uma cor complementar */
+    background-color: #3f49d800; /* Uma cor complementar */
     border: none;
     border-radius: 5px;
     cursor: pointer;
     margin-bottom: 20px; /* Espaçamento para o tabuleiro */
-    transition: background-color 0.3s;
+    transition: trasnfrom 2.0s;
 }
 
 #reset-btn:hover {
-    background-color: #2b1c63; /* Mesma cor da frente da carta */
+    transform: scale(1.05);
 }
